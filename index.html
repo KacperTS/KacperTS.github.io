@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kacper Tomasz Stysial">
     <meta name="description" content="7. verkefni - Lokaverkefni">
-    <title>Lokaverkefni</title>
+    <title>Bílaheimurinn minn</title><!-- Ég veit ekki hvernig ég á að bæta Icon við :/ -->
     <link rel="stylesheet" href="styles.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,10 @@
 <!-- Ef timi leyfir gera 3 language takka-->
 <!-- merkja keywords með emphasis etc. -->
     <header class="container">
+        <div class="language">
+            <a href="index.html">Ísl</a>
+            <a href="english.html">En</a>
+        </div>
         <h1>
             Bílaheimurinn minn
         </h1>
@@ -41,7 +45,7 @@
         <a href="#2">Tegundir kappaksturs</a>
         <a href="#3">Bílamerki</a>
         <a href="#4">Tjúning bíla</a>
-        <a href="#5">Bílapartar útskýrðir</a>
+        <a href="#5">Bílapartar</a>
         <a href="#6">Hættur</a>
     </nav>
     <div class="base-bg container">
@@ -53,8 +57,8 @@
             <section id="2" class="page2">
                 <h2 class="titill">Tegundir kappaksturs og af hverju eru þær svona vinsælar?</h2>
                 <p>Kappakstur er einn af mest spennandi íþróttum heims. Hér eru nokkrar vinsælar tegundir:</p>
-                <ul class="col-2"> <!-- bæta við image icon af f1 rally nascar og street racing inn i textan -->
-                    <p><strong>Formúla 1:</strong> <img src="images/F1_icon.webp" class="float-right" alt="Formula 1 icon">oft kölluð F1, er hápunktur mótorsportsins, alþjóðlegt kappakstursmeistaramót þar sem hraðskreiðustu ökumenn heims keppa í nýjustu bílum smíðaðir af úrvalsliðum. Þetta snýst ekki bara um hraða; þetta er blanda af hörkukeppni, háþróaðri verkfræði, stefnumótun og alþjóðlegu sjónarspili. Hvert tímabil inniheldur röð keppna sem kallast Grand Prix, haldnar á brautum um allan heim, allt frá borgargötum til sögulegra brauta. Ökumenn berjast um stig til að vinna heimsmeistaratitilinn, á meðan lið keppa um titilinn í bílsmiðum. F1 er þar sem tækni mætir adrenalíni og hver keppni er blanda af dramatík, nákvæmni og ástríðu. <a href="https://www.formula1.com/en/latest/article/drivers-teams-cars-circuits-and-more-everything-you-need-to-know-about.7iQfL3Rivf1comzdqV5jwc">[F1]</a></p>
+                <ul class="col-2">
+                    <p><strong>Formúla 1:</strong> <img src="images/F1_icon.webp" class="float-right" alt="Formula 1 icon">oft kölluð F1, er hápunktur mótorsportsins, alþjóðlegt kappakstursmeistaramót þar sem hraðskreiðustu ökumenn heims keppa í nýjustu bílum smíðaðir af úrvalsliðum. Þetta snýst ekki bara um hraða; þetta er blanda af <b>hörkukeppni, háþróaðri verkfræði, stefnumótun og alþjóðlegu sjónarspili</b>. Hvert tímabil inniheldur röð keppna sem kallast <b>Grand Prix</b>, haldnar á brautum um allan heim, allt frá borgargötum til sögulegra brauta. Ökumenn berjast um stig til að vinna <b>heimsmeistaratitilinn</b>, á meðan lið keppa um titilinn í bílsmiðum. F1 er þar sem tækni mætir adrenalíni og hver keppni er blanda af dramatík, nákvæmni og ástríðu. <a href="https://www.formula1.com/en/latest/article/drivers-teams-cars-circuits-and-more-everything-you-need-to-know-about.7iQfL3Rivf1comzdqV5jwc">[F1]</a></p>
                     <p><strong>Rallý:</strong> <img src="images/WRC_icon.webp" class="float-right" alt="Rallý mynd">er mótorsport þar sem ökumenn og aðstoðarökumenn keppa um að ljúka röð sérleiða á fyrirfram ákveðinni braut, sem getur verið almenningsvegir, skógarslóðir eða annað utan vega, á sem hraðastan tíma. Þetta er liðsíþrótt sem byggir á leiðsögufærni aðstoðarökumannsins, sem og hæfni ökumannsins til að takast á við mismunandi undirlag og aðstæður, jafnframt því að vera hraður og þolinn. <a href="https://en.wikipedia.org/wiki/Rallying">[Wiki]</a></p>
                     <p><strong>NASCAR:</strong> <img src="images/NASCAR_icon.webp" class="float-right" alt="NASCAR icon">er bandarískt fyrirtæki sem heimilar og rekur kappakstursviðburði með kappakstursbílum. Það er ein af fremstu mótorsportgreinum heims og stærsta áhorfendahópur, þekkt fyrir hraðskreiða kappakstur á sporöskjulaga brautum, götubrautum og götubrautum um allt land og á alþjóðavettvangi. <a href="https://en.wikipedia.org/wiki/NASCAR">[Wiki]</a></p>
                     <p><strong>Street racing:</strong> <img src="images/streetrace_icon.webp" class="float-right" alt="Mynd úr Fast & Furious">götukappakstur er ólögleg keppni ökutækja á háum hraða á almenningsvegum, frekar en á tilgreindri kappakstursbraut. Þetta felur í sér að eitt eða fleiri ökutæki keppa í tilraun til að ná fjarlægð frá öðrum, oft skipulagt óformlega á eyðilegum svæðum eða vinsælum samkomustöðum. Þessi iðja er hættuleg vegna skorts á öryggisráðstöfunum og getur leitt til alvarlegra refsinga.</p>
@@ -62,139 +66,158 @@
                 <p>Af hverju er þetta skemmtilegt? Það er adrenalínið, keppnin, tæknin, og samfélagið sem gerir þetta svo spennandi.</p>
             </section>
             <section id="3">
-                <h2 class="titill">Bílamerki</h2>
+                <h2 class="titill">Bílamerki og þeirra þekktustu bílar</h2>
                 <p>Það er engin nákvæm tala um bílamerki því greinin er alltaf að breytast, ný vörumerki koma fram og gömul hverfa eða sameinast. Hins vegar eru yfir 100 helstu vörumerki starfandi um allan heim. Meðal þeirra vinsælustu eru:</p>
                 <div class="col-3">
                     <figure> 
-                        <a href="https://en.wikipedia.org/wiki/Toyota">
                             <img src="images/Toyota_Supra_mk4.webp" alt="Mynd af Toyota Supra mk4">
                             <audio controls>
                                 <source src="sound/Toyota_Supra_sound.m4a">
                                 Your browser does not support the audio element.
                             </audio>
-                            <p>Toyota -></p>
+                            <p class="info">Toyota Supra mk4</p>
+                        <a href="https://en.wikipedia.org/wiki/Toyota">
+                            Toyota ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir að framleiða áreiðanlega, hágæða og endingargóða bíla sem halda verðgildi sínu vel.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Volkswagen">
                             <img src="images/VW_Golf.webp" alt="Mynd af Volkswagen Golf GTI">
                             <audio controls>
                                 <source src="sound/Volkswagen_Golf_GTI_sound.m4a">
                                 Your browser does not support the audio element.
                             </audio>
-                            <p>Volkswagen -></p>
+                            <p class="info">Volkswagen Golf GTI</p>
+                        <a href="https://en.wikipedia.org/wiki/Volkswagen">
+                            Volkswagen ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir framúrskarandi þýska verkfræði, helgimynda gerðir eins og Beetle og Golf og orðspor fyrir gæði og áreiðanleika.</p>
                         </figcaption>
                         </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Hyundai_Motor_Company">
                             <img src="images/Hyundai_i30n.webp" alt="Mynd af Hyundai i30N">
                             <audio controls>
-                                
+                                <source src="sound/Hyundai_i30N_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Hyundai -></p>
+                            <p class="info">Hyundai i30N</p>
+                        <a href="https://en.wikipedia.org/wiki/Hyundai_Motor_Company">
+                            Hyundai ->
                         </a>
                         <figcaption>
                             <p>býður upp á fjölbreytt úrval ökutækja með sterku orðspori fyrir gæði, áreiðanleika og staðalbúnað á aðgengilegu verði.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Honda">
                             <img src="images/Honda_Integra_GSR.webp" alt="Mynd af Honda Integra GSR">
                             <audio controls>
-                                
+                                <source src="sound/Honda_Integra_GSR_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Honda -></p>
+                            <p class="info">Honda Integra GSR</p>
+                        <a href="https://en.wikipedia.org/wiki/Honda">
+                            Honda ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir að framleiða áreiðanlega, endingargóða og sparneytna bíla í fjölbreyttum gerðum. Það er einnig þekkt fyrir afkastamiklar vélar og sögu farsælla mótorsporta og kappaksturs.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Nissan">
                             <img src="images/Nissan_Skyline_GTR_R34.webp" alt="Mynd af Nissan Skyline GTR R34">
                             <audio controls>
-                                
+                                <source src="sound/Nissan_Skyline_GTR_R34.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Nissan -></p>
+                            <p class="info">Nissan Skyline GTR R34</p>
+                        <a href="https://en.wikipedia.org/wiki/Nissan">
+                            Nissan ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir nýsköpun sína, áreiðanleika og frammistöðu og hefur alþjóðlegt orðspor fyrir framleiðslu á fjölbreyttum ökutækjum.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Mercedes-Benz">
                             <img src="images/Mercedes_190_evo.webp" alt="Mynd af Mercedes-Benz 190 evo">
                             <audio controls>
-                                
+                                <source src="sound/Mercedes_190_evo_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Mercedes-Benz -></p>
+                            <p class="info">Mercedes 190 Evo</p>
+                        <a href="https://en.wikipedia.org/wiki/Mercedes-Benz">
+                            Mercedes-Benz ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir lúxus, frammistöðu og nýsköpun í bílaiðnaðinum og framleiðir fjölbreytt úrval ökutækja, allt frá lúxusfólksbílum og sendibílum til vörubíla og rúta.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/BMW">
                             <img src="images/BMW_M3.webp" alt="Mynd af BMW M3 E30">
                             <audio controls>
-                                
+                                <source src="sound/BMW_M3_E30_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>BMW -></p>
+                            <p class="info">BMW M3 E30</p>
+                        <a href="https://en.wikipedia.org/wiki/BMW">
+                            BMW ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir að framleiða lúxusbíla og mótorhjól sem eru þekkt fyrir afköst, hágæða verkfræði og nýstárlega tækni.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Audi">
                             <img src="images/Audi_Quattro.webp" alt="Mynd af Audi Quattro">
                             <audio controls>
-                                
+                                <source src="sound/Audi_Quattro_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Audi -></p>
+                            <p class="info">Audi Quattro</p>
+                        <a href="https://en.wikipedia.org/wiki/Audi">
+                            Audi ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir lúxusbíla sína með háum frammistöðum, sem sameina sportlega hönnun og háþróaða tækni. Vörumerkið er sérstaklega þekkt fyrir Quattro fjórhjóladrifskerfið sitt.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Ford_Motor_Company">
                             <img src="images/Ford_Focus.webp" alt="Mynd af Ford Focus">
                             <audio controls>
-                                
+                                <source src="sound/Ford_Focus_RS_MK3_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Ford -></p>
+                            <p class="info">Ford Focus RS MK3</p>
+                        <a href="https://en.wikipedia.org/wiki/Ford_Motor_Company">
+                            Ford ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir að gjörbylta fjöldaframleiðslu með samsetningarlínunni, sem gerði bílinn aðgengilegan millistéttinni, byrjandi með Model T.</p>
                         </figcaption>
                     </figure>
                     <figure>
-                        <a href="https://en.wikipedia.org/wiki/Chevrolet">
                             <img src="images/Chevrolet_corvette_c6.webp" alt="Mynd af Chevrolet Corvette C6">
                             <audio controls>
-                                
+                                <source src="sound/Chevrolet_Corvette_C6_sound.m4a">
+                                Your browser does not support the audio element.
                             </audio>
-                            <p>Chevrolet -></p>
+                            <p class="info">Chevrolet Corvette C6</p>
+                        <a href="https://en.wikipedia.org/wiki/Chevrolet">
+                            Chevrolet ->
                         </a>
                         <figcaption>
                             <p>þekkt fyrir að framleiða fjölbreytt úrval hagkvæmra ökutækja, þar á meðal vörubíla og jeppa, og fyrir helgimynda sportbíla eins og Corvette.</p>
                         </figcaption>
                     </figure>
                 </div>
-                <p>Meðal bíla sem hafa verið nefndir eru Volvo, Mazda, Mitsubishi, Subaru, Skoda, Aston Martin, Saab, Alfa Romeo, Renault og fleiri. Ofurbílamerki eins og Ferrari, Lamborghini, McLaren, Porsche, Bugatti, Koenigsegg og Pagani.
-                Hvert vörumerki hefur sína eigin sérstöðu, sögu og sérstöðu. <a href="https://en.wikipedia.org/wiki/List_of_automotive_manufacturers_by_production">[Wiki]</a></p>
+                <p>Meðal bíla sem hafa verið nefndir eru Volvo, Mazda, Mitsubishi, Subaru, Skoda, Aston Martin, Saab, Alfa Romeo, Renault og fleiri. Ofurbílamerki eins og Ferrari, Lamborghini, McLaren, Porsche, Bugatti, Koenigsegg og Pagani.</p>
+                <p>Hvert vörumerki hefur sína eigin sérstöðu, sögu og sérstöðu. <a href="https://en.wikipedia.org/wiki/List_of_automotive_manufacturers_by_production">[Wiki]</a></p>
             </section>
             <section id="4">
-                <h2 class="titill">Tjúning bíla og hvað er það og af hverju er það skemmtilegt?</h2>
+                <h2 class="titill">Tjúning bíla, hvað er það og af hverju er það skemmtilegt?</h2>
                 <p>Bílatjúning er ferlið við að breyta bíl til að bæta frammistöðu hans, útlit eða aksturseiginleika. Þetta getur falið í sér breytingar á vél, fjöðrun, útblæstri, rafeindabúnaði og jafnvel útliti og innréttingu bílsins.</p>
-                <p>Tegundir tjúnings:</p>
+                <iframe class="gluggi" src="https://www.youtube.com/embed/LjZlAzr8MuQ?si=XbVwockzbsHwBuX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3 class="titill">Tegundir tjúnings:</h3>
                 <div class="col-4">
                     <p><strong>Afkastatjúning:</strong> Auka afl, hröðun og hámarkshraða bílsins með því að setja upp túrbó, yfirþrýstingskerfi eða uppfæra ECU tölvuna.</p>
                     <p><strong>Fjöðrunartjúning:</strong> Bæta meðhöndlun og stöðugleika bílsins með því að setja upp íþróttafjöðrun, lækka bílinn eða bæta við stífari stýrisbúnaði.</p>
@@ -207,6 +230,7 @@
             </section>
             <section id="5" class="page5">
                 <h2 class="titill">Bílapartar útskýrðir, hvað gerir bílinn betri í akstri?</h2>
+                <p>Bílar eru flókin tæki með þúsundir hluta sem vinna saman. Hér útskýrum við mikilvægustu hlutana, sérstaklega þá sem hafa áhrif á afköst, hraða, akstur og hljóð.</p>
                 <div class="col-3">
                     <div>
                         <h3>Vélin</h3>
@@ -283,35 +307,45 @@
                         </ul>
                     </div>
                     <div>
+                        <h3>Gírskipting</h3>
+                        <img src="images/Transmission.webp" alt="Transmission">
+                        <p>Flytur afl frá vélinni til hjólanna.</p>
+                        <ul>
+                            <li><p><strong>Beinskipting vs. sjálfskipting:</strong> Beinskipting gefur meiri stjórn; sjálfskipting er auðveldari í notkun.</p></li>
+                            <li><p><strong>Tvöföld kúplingsgírskipting (DCT):</strong> Bjóða upp á eldingarhraðar gírskiptingar, frábært fyrir afkastamikla akstur.</p></li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3>Gúmmídekk</h3>
                         <img src="images/Racing_tires.webp" alt="Racing tires">
                         <p>Eina sem snertir veginn.</p>
                         <ul>
                             <li><p><strong>Afkastadekk:</strong> Betra grip og stýring, sérstaklega í þurru veðri.</p></li>
+                            <li><p><strong>Allra ára tíma dekk:</strong> Henta fyrir mismunandi veður, en ekki sérhæfð.</p></li>
                         </ul>
                     </div>
                 </div>
                 <h3 class="titill">Af hverju skiptir þetta máli?</h3>
                 <p>Að skilja hvernig bíllinn virkar hjálpar þér að taka betri ákvarðanir um kaup, viðhald og breytingar. Hvort sem þú elskar hraða, þægindi, eða útlit, þá gerir þessi þekking bílreiðina skemmtilegri og persónulegri.</p>
             </section>
-            <section id="#6">
+            <section id="6">
                 <h2 class="titill">Hættur við tjúning og kappakstur</h2>
                 <p>Tjúning og kappakstur geta verið spennandi, en fylgja alvarlegar áhættur.</p>
                 <dl>
                     <dt>Hættur við tjúning:</dt>
                     <dd>
                         <ul>
-                            <li><p><strong>Öryggi:</strong> Óviðeigandi breytingar geta gert bílinn óstöðugan eða óöruggan.</p></li>
-                            <li><p><strong>Lögmæti:</strong> Sumir tjúningsþættir geta verið ólöglegir og leitt til sektar eða upptöku bílsins.</p></li>
-                            <li><p><strong>Ábyrgð:</strong> Tjúning getur ógilt ábyrgð framleiðanda.</p></li>
+                            <li><p>Röng tjúning getur skemmt vél, bremsur eða fjöðrun.</p></li>
+                            <li><p>Hún getur fellt niður ábyrgð og hækkað tryggingar</p></li>
+                            <li><p>Sum búnaður er ólöglegur og getur valdið sektum.</p></li>
                         </ul>
                     </dd>
                     <dt>Hættur við kappakstur:</dt>
                     <dd>
                         <ul>
-                            <li><p><strong>Lögmæti:</strong> Ólöglegur götukappakstur er hættulegur og refsivertur.</p></li>
-                            <li><p><strong>Öryggi:</strong> Háhraðakstur eykur líkur á slysum, sem geta verið banvæn.</p></li>
-                            <li><p><strong>Áhrif á aðra:</strong> Götukappakstur setur aðra vegfarendur í hættu.</p></li>
+                            <li><p>Götukappakstur er ólöglegur og mjög hættulegur.</p></li>
+                            <li><p>Hann getur valdið slysum, meiðslum eða dauða.</p></li>
+                            <li><p>Löglegar afleiðingar eru sektir, svipting ökuréttar og upptaka bíls.</p></li>
                         </ul>
                     </dd>
                     <p>Það er mikilvægt að vera meðvitaður um þessar áhættur og taka upplýstar ákvarðanir. Ef þú ákveður að taka þátt í tjúningu eða kappakstri, gerðu það á öruggan og löglegan hátt, t.d. á viðurkenndum brautum eða viðburðum.</p>
@@ -346,14 +380,16 @@
                             <dd><a href="https://performance.bilstein.com/en/auto-tuning/">Auto tuning</a></dd>
                         <dt>Myndir</dt>
                             <dd>Sótt af google</dd>
+                        <dt>Hljóð</dt>
+                            <dd>Sótt af youtube</dd>
                     </dl>
                 </dd>
             </dl>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10187.24268469283!2d6.931549895468036!3d50.332783400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bfad369010c559%3A0x80dbc21b73ca589a!2sN%C3%BCrburgring!5e0!3m2!1spl!2sis!4v1760194693837!5m2!1spl!2sis" class="kort" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <p class="center">&copy; 2025 | Kacper Tomasz Stysial</p>
+        <h5 class="center">&copy; 2025 | Kacper Tomasz Stysial</h5>
     </footer>
     <!-- top button has to be a car wheel -->
-    <p><a class="top-btn" href="#top">TOP</a></p>
+    <a class="top-btn" href="#top">TOP</a>
 </body>
 </html>

@@ -22,7 +22,21 @@ p, .titill{
     line-height: 1.8rem;
 }
 
-/*========= NAVBAR =========*/
+/*========= NAVBAR  og LINKS =========*/
+a:link{
+    text-decoration: none;
+    color: rgb(47, 136, 136);
+    padding: 2px;
+}
+a:hover, a:active{
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.5);
+}
+a:visited{
+    color: pink;
+}
+
 nav{
     display: grid;
     grid-template-columns: 1fr;
@@ -40,11 +54,15 @@ nav a:link{
     font-size: 1.2em;
     padding: .5rem;
 }
+nav a:visited{
+    color: black;
+    background-color: rgb(47, 136, 136);
+}
 nav a:hover, nav a:active{
     background-color: rgb(37, 104, 104);
     color: white;
-    border-radius: 10px;
 }
+
 
 /*========= HEADER =========*/
 header{
@@ -60,6 +78,23 @@ header h1{
     margin: 0 0 -10rem 0;
     z-index: 1;
     text-align: center;
+}
+.language{
+    margin: 0;
+    font-size: .9rem;
+    z-index: 1;
+    margin: 0 0 -3rem 0;
+}
+.language a{
+    background-color: rgb(31, 31, 40);
+    border: 1px solid white;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+header .language {
+    position: absolute;
+    top: 1em;
+    right: 2em;
 }
 
 /*========= MAIN =========*/
@@ -87,19 +122,33 @@ header h1{
     background-image: linear-gradient(to top, rgb(31, 31, 40), rgb(21, 21, 30));
     padding: 1rem;
 }
-.footer-bg{}
+.footer-bg{
+    background-image: linear-gradient(to top, rgb(31, 31, 40), rgb(39, 39, 51));
+    padding: 1rem;
+}
 
 /*========= AUKA =========*/
 strong{
     color: pink;
+    font-size: larger;
 }
 .center{
     text-align: center;
+    margin-bottom: 0;
 }
 .float-right{
     float: right;
     padding: .5rem;
 }
+.info{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    padding: .5rem;
+    margin: 0;
+}
+
+/*========= MYNDIR =========*/
 .page2 img{
     max-width: 50%;
 }
@@ -125,10 +174,12 @@ picture img{
     width:100%;    
     height:15.75rem;
 }
-/*---------------LINKS----------------*/
-a{
-    text-decoration: none;
-    color: rgb(47, 136, 136);
+/*---------------WINDOW----------------*/
+
+.gluggi{
+    width:100%;
+    height:13.5rem;
+    margin: auto;
 }
 
 /*---------------TOP BUTTON----------------*/
@@ -151,8 +202,6 @@ a{
     nav{
         display: flex;
         justify-content: space-between;
-        align-items: space-between;
-        gap: .2rem;
     }
     nav a:link{
         font-size: 1.2em;
@@ -161,8 +210,12 @@ a{
       height:19.7rem;
     }
 
-    .base-bg{
+    .base-bg, .footer-bg{
         padding: 1.5rem;
+    }
+
+    .gluggi {
+      height:19.7rem;
     }
     
 }
@@ -181,13 +234,17 @@ a{
         font-size: 4rem;
         margin: 0 0 -12rem 0;
     }
-    .base-bg{
+    .base-bg, .footer-bg{
         padding: 2rem;
     }
     
-    .kort {
+    .kort{
     height:28.2rem;
     }
+
+    .gluggi{
+    height:24.6rem;
+  }
 }
 
 /*---------------60rem----------------*/
@@ -195,6 +252,7 @@ a{
     nav, nav a{
         position: sticky;
         top: 0;
+        z-index: 1;
     }
     .top-btn{
         font-size: 1.5em;
@@ -212,8 +270,12 @@ a{
         margin: 0 0 -15rem 0;
     }
     
-    .base-bg{
+    .base-bg, .footer-bg{
         padding: 2.5rem;
+    }
+
+    .gluggi{
+    height:33rem;
     }
 }
 /*---------------80rem----------------*/
@@ -231,8 +293,12 @@ a{
         margin: 0 0 -20rem 0;
     }
 
-    .base-bg{
+    .base-bg, .footer-bg{
         padding: 3rem;
+    }
+
+    .gluggi {  
+      height:44em;
     }
 }
 /* !!!!!! GERA STÆRRI MEDIA !!!!!!!!!! */
