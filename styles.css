@@ -29,7 +29,7 @@ a:link{
     padding: 2px;
 }
 a:hover, a:active{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.5);
 }
@@ -187,7 +187,6 @@ picture img{
     position: fixed;
     right: 1em;
     bottom: 1em;
-    background-color: rgb(47, 136, 136);
     padding: .7rem .6rem;
     border-radius: 50%;
     text-decoration: none;
