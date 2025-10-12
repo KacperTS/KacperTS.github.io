@@ -85,9 +85,10 @@ header h1{
     z-index: 1;
     margin: 0 0 -3rem 0;
 }
-.language a{
+.language a, .language a:visited{
     background-color: rgb(31, 31, 40);
     border: 1px solid white;
+    color: rgb(47, 136, 136);
     border-radius: .5rem;
     padding: .5rem;
 }
@@ -191,7 +192,8 @@ picture img{
     border-radius: 50%;
     text-decoration: none;
     font-size: .8em;
-    box-shadow: 2px 2px 10px black
+    box-shadow: 2px 2px 10px black;
+    z-index: 2;
 }
 
 /*========= MEDIA =========*/
