@@ -20,9 +20,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-main{
-    margin-bottom: 50vh;
-}
 .Ds3Body{
     background-image: url("../Images/DarkSouls3Images/Ds3Back-4k.jpg");
     background-size: cover;
@@ -315,6 +312,9 @@ input[type=Submit]:active, button:active, a:active{
 @media (width >= 768px){
     body{
         padding-top: 5rem;
+    }
+    main{
+    margin-bottom: 50vh;
     }
     nav, nav ul{
         flex-direction: row;
