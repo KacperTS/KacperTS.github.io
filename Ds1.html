@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls - Lokaverkefni</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Habibi&family=Young+Serif&display=swap" rel="stylesheet">
+    <!--Googel fonts endar-->
+    <link rel="stylesheet" href="icon/style.css">
+    <link rel="stylesheet" href="CSS/pico.pumpkin.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body class="Ds1Body">
+    <main class="container">
+    <!--Breyta bakgrunns mynd-->
+    <label role="button" for="menu" class="menu-takki">&#9776;</label>
+    <input type="checkbox" id="menu">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><img src="Images/logo.svg" alt="Logo" class="logo"></a></li>
+        </ul>
+        <ul>
+            <li><a href="#top">Dark Souls 1</a></li>
+            <li><a href="Ds2.html">Dark Souls 11</a></li>
+            <li><a href="Ds3.html">Dark Souls 111</a></li>
+        </ul>
+    </nav>
+        <div>
+            <!-- Logo -->
+            <img src="Images/Dark_Souls_logo_black.svg" alt="Dark Souls logo" class="title"> 
+        </div>
+        <div>
+            <article>
+                <!-- Custom font -->
+                <h3>Sagan í Dark Souls 1</h3>
+                <p>Dark Souls 1 segir sögu deyjandi heims sem upphaflega var stjórnað af ódauðlegum drekum, sem breyttist þegar fjórar verur fundu Lord Souls í Fyrsta Loganum, sem hóf Eldöld. Þegar loginn dofnar, guðirnir missa völd sín og mennirnir breytast í uppvakninga, verður aðalpersónan að ákveða hvort hún vilji tengja eldinn, halda áfram með guðaöldina, eða láta hann dofna og hefja Myrkuröld.</p>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/gfI1oB5WwOo?si=JUyO9NpiKEi5DPve" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h3>Landslag og svæði</h3>
+                <p>Dark Souls 1 er þekkt fyrir mjög samtengda, lóðrétta heimshönnun sína, sem gerist í hrörnandi landi Lordran. Landslagið er hannað sem samfellt, lagskipt kort þar sem flest svæði tengjast aftur við miðlæga miðstöð, Firelink Shrine, með fjölbreyttu umhverfi, allt frá gotneskum borgum til djúpra mýra.</p>
+                <h3>Bardagakerfið</h3>
+                <p>Kerfisbundið og þrekstýrt bardagakerfi sem leggur áherslu á hreyfimyndir, þar sem ekki er hægt að hætta við aðgerðir, sem krefst nákvæmrar tímasetningar til að forðast að vera varnarlaus. Það er oft lýst sem „dansinum“ þar sem leikmenn læra óvinamynstur til að nýta sér op, nota blöndu af því að forðast, blokka, vara við og ráðast á til að ná árangri.</p>
+                <blockquote>
+                    "We Are Amidst Strange Beings, In A Strange Land."
+                    <footer>
+                        <cite>- Solaire Of Astora, Dark Souls 1</cite>
+                    </footer>
+                </blockquote>
+                <h3>Myndasafn</h3>
+                <!-- Myndasýning hér -->
+                <div class="galleri">
+                    <div class="galleri-item">
+                        <a href="Images/Ds1Images/ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.jpg">
+                            <img src="Images/Ds1Images/ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.jpg" alt="Gaping Dragon boss mynd">
+                        </a>
+                    </div>
+                    <div class="galleri-item">
+                        <a href="Images/Ds1Images/ss_92b2ba470cbfdb8839b649b3f478e5531dd81a17.jpg">
+                            <img src="Images/Ds1Images/ss_92b2ba470cbfdb8839b649b3f478e5531dd81a17.jpg" alt="Gargoyle boss mynd">
+                        </a>
+                    </div>
+                    <div class="galleri-item">
+                        <a href="Images/Ds1Images/ss_626cc310dc9ac7fb146011582c864a35e5f3e381.jpg">
+                            <img src="Images/Ds1Images/ss_626cc310dc9ac7fb146011582c864a35e5f3e381.jpg" alt="Stray Demon boss mynd">
+                        </a>
+                    </div>
+                    <div class="galleri-item">
+                        <a href="Images/Ds1Images/ss_f60f54e58b13d0744853672ccd35810397e3fa26.jpg">
+                            <img src="Images/Ds1Images/ss_f60f54e58b13d0744853672ccd35810397e3fa26.jpg" alt="Titanite Demon mynd">
+                        </a>
+                    </div>
+                    <div class="galleri-item">
+                        <a href="Images/Ds1Images/ss_f1617a419eb3b0cd877ec71230c59aa2672b62dc.jpg">
+                            <img id="lastMynd" src="Images/Ds1Images/ss_f1617a419eb3b0cd877ec71230c59aa2672b62dc.jpg" alt="Archer mynd">
+                        </a>
+                    </div>
+                </div>
+                    <div id="loader-overlay">
+                        <img src="Images/logo.svg" class="spinner" alt="Loader">
+                    </div>
+                    <script>
+                        const img = document.getElementById('lastMynd');
+                        const loader = document.getElementById('loader-overlay');
+
+                        function hideLoader() {
+                        loader.classList.add('hidden');
+                        setTimeout(() => loader.style.display = 'none', 600);
+                        }
+
+                        if (img.complete) {
+                        hideLoader();
+                        } else {
+                        img.addEventListener('load', hideLoader);
+                        img.addEventListener('error', hideLoader);
+                        }
+                    </script>
+            </article>
+        </div>
+    </main>
+    <footer class="container-fluid footer">
+        <div class="icons">
+            <a href="index.html">Heim <span class="icon-home"></span></a>
+            <a href="contact.html">Contact <span class="icon-mail"></span></a>
+        </div>
+        <div class="icons">
+            <!-- Icons -->
+            <a href="https://www.instagram.com/kacper.stysial/" target="_blank"><span class="icon-instagram"></span></a>
+            <a href="https://steamcommunity.com/profiles/76561198868978629/" target="_blank"><span class="icon-steam"></span></a>
+            <a href="https://github.com/KacperTS" target="_blank"><span class="icon-github"></span></a>
+        </div>
+        <small class="center">© 2026 | Kacper Tomasz Stysial</small>
+    </footer>
+</body>
+</html>
