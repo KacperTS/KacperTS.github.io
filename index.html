@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls - Lokaverkefni</title>
+    <link rel="icon" href="Images/logo.svg">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Habibi&family=Young+Serif&display=swap" rel="stylesheet">
+    <!--Googel fonts endar-->
+    <link rel="stylesheet" href="icon/style.css">
+    <link rel="stylesheet" href="CSS/pico.pumpkin.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body id="top">
+    <main class="container">
+    <!--Breyta bakgrunns mynd-->
+    <label role="button" for="menu" class="menu-takki">&#9776;</label>
+    <input type="checkbox" id="menu">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><img src="Images/logo.svg" alt="Logo" class="logo"></a></li>
+        </ul>
+        <ul>
+            <li><a href="Ds1.html">Dark Souls 1</a></li>
+            <li><a href="Ds2.html">Dark Souls 11</a></li>
+            <li><a href="Ds3.html">Dark Souls 111</a></li>
+        </ul>
+    </nav>
+        <div>
+            <img src="Images/Dark_Souls_logo_black.svg" alt="Dark Souls logo" class="title"> 
+        </div>
+        <div class="ad">
+            <label for="loka" role="button"><b>X</b></label>
+            <input type="checkbox" id="loka">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="Images/ad1.webp" alt="Auglýsing"></a>
+        </div>
+        <div>
+            <article>
+                <h3>Hvað er Dark Souls</h3>
+                <div class="textaMyndasyning">
+                    <img src="Images/Fromsoftware_logo.svg" alt="FromSoftware Logo" >
+                    <img src="Images/Bandai_Namco_Holdings_logo.svg" alt="Bandai Namco logo">
+                    <img src="Images/Hidetaka_Miyazaki-1.webp" alt="Mynd af Hidetaka Miyazaki">
+                </div>
+                <p>Dark Souls er dark fantasy, ARPG leikjasería. Hún var búin til af FromSoftware og gefin út af Bandai Namco Entertainment. Leikirnir voru skapaðir af Hidetaka Miyazaki og hófust með útgáfu Dark Souls árið 2011 og hafa komið út tvær framhaldsleikir, Dark Souls II sem kom út árið 2014 og Dark Souls III sem kom út árið 2016. Leikirnir hafa fengið mikið lof og er erfiðleikastigið eitt það sem mest er rætt um. Fyrsti leikurinn, Dark Souls, er oft nefndur sem einn besti leikur allra tíma. Leikirnir höfðu selst í yfir 40 milljónum eintaka um allan heim í lok árs 2025.</p>
+                <p>Aðrir leikir frá FromSoftware, eins og Demon’s Souls, Bloodborne, Sekiro og Elden Ring, eru svipaðir og hafa leitt til nýs leikjaflokks sem kallast Soulslike.</p>
+                <h3>Hver kom með hugmyndinna?</h3>
+                <p>Hugmyndin á bak við gerð Dark Souls kom frá leikstjóranum Hidetaka Miyazaki. Hann vildi búa til leik sem væri krefjandi og byggðist á því að leikmenn uppgötvuðu hluti sjálfir, því honum fannst svona leikir vanta í tölvuleikjaiðnaðinn.</p>
+                <p>Hann var líka innblásinn af eigin reynslu, eins og að sigrast á erfiðleikum og rata um flókna og dularfulla heima.</p>
+                <!-- Dialog -->
+                <div class="konnun">
+                    <small>Pssst... ertu til í að taka stutta könunn?</small>
+                    <button class="konnunBtn" command="show-modal" commandfor="quiz"><small>Svara könnun</small></button>
+                </div>
+                <dialog id="quiz">
+                    <article>
+                        <header>
+                            <button rel="prev" command="close" commandfor="quiz"></button>
+                            <h5>Stutt könnun</h5>
+                        </header>
+                        <form>
+                            <div class="spurning1">
+                                <label>1. Hefurðu spilað einhvern af Dark Souls leikjunum?:</label>
+                                <label for="radioJa1"><input type="radio" id="radioJa1" name="1">Já</label>
+                                <label for="radioNei1"><input type="radio" id="radioNei1" name="1">Nei</label>
+                            </div>
+                            <div class="spurning1-1">
+                                <label>1.1 Telur þú þig vera góð<small>/</small>ur í leiknum?:</label>
+                                <label for="radioJa1-1"><input type="radio" id="radioJa1-1" name="1-1">Auðvitað ég er topp 10 í heiminum</label>
+                                <label for="radioNei1-1"><input type="radio" id="radioNei1-1" name="1-1">Neeei... kemst ekki fram hjá fyrstu boss-um</label>
+                            </div>
+                            <div class="spurning2">
+                                <label>2. Ætlarðu að spila leikina einhvern tímann í framtíðinni?</label>
+                                <label for="radioJa2"><input type="radio" id="radioJa2" name="2">Já... auðvitað</label>
+                                <label for="radioNei2"><input type="radio" id="radioNei2" name="2">Nei... held ekki</label>
+                            </div>
+                            <div class="center">
+                                <input type="submit" value="Senda">
+                            </div>
+                        </form>
+                    </article>
+                </dialog>
+            </article>
+            <div class="grid">
+                <article>
+                    <img src="Images/DarkSoulsRemastered.jpg" alt="Dark Souls Remastered  mynd">
+                    <p>Fysti leikurinn kom út árið 2011</p>
+                    <a href="Ds1.html">Nánar um <span class="icon-arrow-right"></a>
+                </article>
+                <article>
+                    <img src="Images/DarkSouls2.avif" alt="Dark Souls 2 mynd">
+                    <p>Seinni leikurinn kom út 2014</p>
+                    <a href="Ds2.html">Nánar um <span class="icon-arrow-right"></span></a>
+                </article>
+                <article>
+                    <img src="Images/DarkSouls3Deluxe.avif" alt="Dark Souls 3 Deluxe edition mynd">
+                    <p>Þriðji leikurinn kom út 2016</p>
+                    <a href="Ds3.html">Nánar um <span class="icon-arrow-right"></a>
+                </article>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Leikur</th>
+                        <th>Útgáfudagur</th>
+                        <th>fjöldi umsagna</th>
+                        <th>Hámarksfjöldi leikmanna í einu</th>
+                        <th>Núverandi verð</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Leikur">Dark Souls 1</td>
+                        <td data-label="Útgáfudagur">22. <small>september</small> 2011</td>
+                        <td data-label="Fjöldi umsagna">150.120 <small>92% Jákvæð</small></td>
+                        <td data-label="Hámarksfjöldi leikmanna í einu">24.501</td>
+                        <td data-label="Núverandi verð">$39.99</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Leikur">Dark Souls 2</td>
+                        <td data-label="Útgáfudagur">11. <small>mars</small> 2014</td>
+                        <td data-label="Fjöldi umsagna">128.498 <small>83% Jákvæð</small></td>
+                        <td data-label="Hámarksfjöldi leikmanna í einu">12.106</td>
+                        <td data-label="Núverandi verð">$39.99</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Leikur">Dark Souls 3</td>
+                        <td data-label="Útgáfudagur">12. <small>apríl</small> 2016</td>
+                        <td data-label="Fjöldi umsagna">434.892 <small>94% Jákvæð</small></td>
+                        <td data-label="Hámarksfjöldi leikmanna í einu">129.975</td>
+                        <td data-label="Núverandi verð">$59.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="container-fluid footer">
+        <div class="icons">
+            <a href="#top">Heim <span class="icon-home"></span></a>
+            <a href="contact.html">Contact <span class="icon-mail"></span></a>
+        </div>
+        <div class="icons">
+            <!-- Icons -->
+            <a href="https://www.instagram.com/kacper.stysial/" target="_blank"><span class="icon-instagram"></span></a>
+            <a href="https://steamcommunity.com/profiles/76561198868978629/" target="_blank"><span class="icon-steam"></span></a>
+            <a href="https://github.com/KacperTS" target="_blank"><span class="icon-github"></span></a>
+        </div>
+        <small class="center">© 2026 | Kacper Tomasz Stysial</small>
+    </footer>
+</body>
+</html>
