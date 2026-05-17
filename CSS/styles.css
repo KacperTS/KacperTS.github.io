@@ -314,7 +314,7 @@ input[type=Submit]:active, button:active, a:active{
         padding-top: 5rem;
     }
     main{
-    margin-bottom: 50vh;
+        margin-bottom: 50vh;
     }
     nav, nav ul{
         flex-direction: row;
